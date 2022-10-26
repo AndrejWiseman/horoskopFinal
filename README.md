@@ -1,0 +1,2 @@
+# horoskopFinal
+novi horoskop app
