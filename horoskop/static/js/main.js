@@ -1,9 +1,13 @@
 
-function showSpinner() {
-    document.getElementById("spinner-overlay").style.display = "block";
-}
+// function showSpinner() {
+//     document.getElementById("spinner-overlay").style.display = "block";
+// }
+//
+// function hideSpinner() {
+//     document.getElementById("spinner-overlay").style.display = "none";
+// }
 
-function hideSpinner() {
-    document.getElementById("spinner-overlay").style.display = "none";
-}
+
+
+
 
