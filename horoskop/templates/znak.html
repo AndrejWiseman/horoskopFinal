@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load custom_filters %}
 
 
 {% block title %}
@@ -18,8 +19,6 @@
             <h3>{{ znak.znak | capfirst }}</h3>
         </div>
 
-{#        <h1>{{ znak.znak }}</h1>#}
-
         <div class="card-body">
 
             <h6>Osnovne karakteristike</h6>
@@ -30,8 +29,8 @@
                 <li class="list-group-item"><strong>Vladajuća planeta:</strong> {{ znak.osnovne_karakteristike.Vladajuća_planeta }}</li>
                 <li class="list-group-item"><strong>Vladajuća kuća:</strong> {{ znak.osnovne_karakteristike.Vladajuća_kuća }}</li>
                 <li class="list-group-item"><strong>Suprotni znak:</strong> {{ znak.osnovne_karakteristike.Suprotni_znak }}</li>
-                <li class="list-group-item"><strong>Vrline:</strong> {{ znak.Ovan.osnovne_karakteristike.Vrline|join:", " }}</li>
-                <li class="list-group-item"><strong>Mane:</strong> {{ znak.Ovan.osnovne_karakteristike.Mane|join:", " }}</li>
+                <li class="list-group-item"><strong>Vrline:</strong> {{ znak.osnovne_karakteristike.Vrline|join:", " }}</li>
+                <li class="list-group-item"><strong>Mane:</strong> {{ znak.osnovne_karakteristike.Mane|join:", " }}</li>
                 <li class="list-group-item"><strong>Voli:</strong> {{ znak.osnovne_karakteristike.Voli|join:", " }}</li>
                 <li class="list-group-item"><strong>Ne voli:</strong> {{ znak.osnovne_karakteristike.Ne_voli|join:", " }}</li>
                 <li class="list-group-item"><strong>Poznati:</strong> {{ znak.osnovne_karakteristike.Poznati|join:", " }}</li>
@@ -52,7 +51,7 @@
 
         </div>
 
-        <a href="../../{{ znak.znak | lower  }}" class="btn btn-primary">Nazad</a>
+        <a href="../../{{ znak.znak | lower | remove_diacritics  }}" class="btn btn-primary">Nazad</a>
 
     </div>
 

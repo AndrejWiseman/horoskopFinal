@@ -9,3 +9,10 @@
 .horoskop-card {
     background: transparent;
 }
+
+.nav-link {
+    padding: 5px 10px;
+}
+.dodatni-link {
+    text-decoration: none;
+}
