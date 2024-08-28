@@ -1,14 +1,18 @@
 {% extends 'base.html' %}
-
+{% load static %}
 
 {% block title %}
     {{ znak | capfirst }}
 {% endblock %}
 
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/znak-detaljno.css' %}">
+ {% endblock %}
+
 
 {% block content %}
 
-    <div class="card text-bg-info mb-3 horoskop-card" style="max-width: 550px; margin: 20px auto;">
+    <div class="card  mb-3 horoskop-card" style="max-width: 550px; margin: 20px auto;">
 
       <div class="card-header kard-naslov">
         <h3>{{ znak | capfirst }}</h3>
@@ -18,11 +22,11 @@
 
         <ul class="nav nav-tabs d-flex justify-content-around" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active btn-sm" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Dnevni</button>
+            <button class="nav-link active btn-sm" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Danas</button>
           </li>
 
           <li class="nav-item" role="presentation">
-            <button class="nav-link btn-sm" id="sutra-tab" data-bs-toggle="tab" data-bs-target="#sutra-tab-pane" type="button" role="tab" aria-controls="sutra-tab-pane" aria-selected="false">Sutrašnji</button>
+            <button class="nav-link btn-sm" id="sutra-tab" data-bs-toggle="tab" data-bs-target="#sutra-tab-pane" type="button" role="tab" aria-controls="sutra-tab-pane" aria-selected="false">Sutra</button>
           </li>
 
           <li class="nav-item" role="presentation">
@@ -33,6 +37,9 @@
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link btn-sm" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Godišnji</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link btn-sm" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Više o znaku</button>
           </li>
         </ul>
 
