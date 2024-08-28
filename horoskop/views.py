@@ -13,6 +13,7 @@ def prikazi_znak(request, znak):
     with open(json_path, 'r', encoding='utf-8') as json_file:
         data = json.load(json_file)
 
+    # return render(request, 'znak.html', {'znak': data[znak]})
     return render(request, 'znak.html', {'znak': data[znak]})
 
 

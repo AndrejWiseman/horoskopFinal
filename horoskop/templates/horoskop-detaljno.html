@@ -39,7 +39,7 @@
             <button class="nav-link btn-sm" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Godišnji</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link btn-sm" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Više o znaku</button>
+            <button class="nav-link btn-sm" id="znak-tab" data-bs-toggle="tab" data-bs-target="#znak-tab-pane" type="button" role="tab" aria-controls="znak-tab-pane" aria-selected="false"><a href="{% url 'prikazi_znak' znak %}">Više o znaku</a></button>
           </li>
         </ul>
 
@@ -61,6 +61,7 @@
           <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
             <p>{{ godisnji | safe }}</p>
           </div>
+
         </div>
       </div>
 

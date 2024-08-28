@@ -6,6 +6,6 @@ urlpatterns = [
     path('', home, name='home'),
 
     path('<str:znak>', horoskop, name='horoskop'),
-    path('znak/<str:znak>/', prikazi_znak, name='prikazi_znak'),
+    path('znak/<str:znak>', prikazi_znak, name='prikazi_znak'),
 
 ]

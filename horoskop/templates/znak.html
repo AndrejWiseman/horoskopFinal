@@ -1,38 +1,59 @@
 {% extends 'base.html' %}
+{% load static %}
+
 
 {% block title %}
      {{ znak.znak }}
 {% endblock %}
 
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/znak-osobine.css' %}">
+ {% endblock %}
+
 {% block content %}
 
-    <h1>{{ znak.znak }}</h1>
-    <h2>Osnovne karakteristike</h2>
-    <ul>
-        <li>Element: {{ znak.osnovne_karakteristike.Element }}</li>
-        <li>Kvalitet: {{ znak.osnovne_karakteristike.Kvalitet }}</li>
-        <li>Vladajuća planeta: {{ znak.osnovne_karakteristike.Vladajuća_planeta }}</li>
-        <li>Vladajuća kuća: {{ znak.osnovne_karakteristike.Vladajuća_kuća }}</li>
-        <li>Suprotni znak: {{ znak.osnovne_karakteristike.Suprotni_znak }}</li>
-        <li>Vrline: {{ znak.Ovan.osnovne_karakteristike.Vrline|join:", " }}</li>
-        <li>Mane: {{ znak.Ovan.osnovne_karakteristike.Mane|join:", " }}</li>
-        <li>Voli: {{ znak.osnovne_karakteristike.Voli|join:", " }}</li>
-        <li>Ne voli: {{ znak.osnovne_karakteristike.Ne_voli|join:", " }}</li>
-        <li>Poznati: {{ znak.osnovne_karakteristike.Poznati|join:", " }}</li>
-    </ul>
+    <div class="card  mb-3 horoskop-card" style="max-width: 550px; margin: 20px auto;">
 
-    <h2>Karakteristike</h2>
-    <p>{{ znak.karakteristike.opis }}</p>
-    <h3>Ljubav</h3>
-    <p>{{ znak.karakteristike.ljubav }}</p>
-    <h3>Karijera</h3>
-    <p>{{ znak.karakteristike.karijera }}</p>
-    <h3>Prijatelji i porodica</h3>
-    <p>{{ znak.karakteristike.prijatelji_i_porodica }}</p>
-    <h3>Zdravlje</h3>
-    <p>{{ znak.karakteristike.zdravlje }}</p>
-    <h3>Slaganje</h3>
-    <p>{{ znak.karakteristike.slaganje }}</p>
+        <div class="card-header kard-naslov">
+            <h3>{{ znak.znak | capfirst }}</h3>
+        </div>
 
+{#        <h1>{{ znak.znak }}</h1>#}
+
+        <div class="card-body">
+
+            <h6>Osnovne karakteristike</h6>
+
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Element:</strong> {{ znak.osnovne_karakteristike.Element }}</li>
+                <li class="list-group-item"><strong>Kvalitet:</strong> {{ znak.osnovne_karakteristike.Kvalitet }}</li>
+                <li class="list-group-item"><strong>Vladajuća planeta:</strong> {{ znak.osnovne_karakteristike.Vladajuća_planeta }}</li>
+                <li class="list-group-item"><strong>Vladajuća kuća:</strong> {{ znak.osnovne_karakteristike.Vladajuća_kuća }}</li>
+                <li class="list-group-item"><strong>Suprotni znak:</strong> {{ znak.osnovne_karakteristike.Suprotni_znak }}</li>
+                <li class="list-group-item"><strong>Vrline:</strong> {{ znak.Ovan.osnovne_karakteristike.Vrline|join:", " }}</li>
+                <li class="list-group-item"><strong>Mane:</strong> {{ znak.Ovan.osnovne_karakteristike.Mane|join:", " }}</li>
+                <li class="list-group-item"><strong>Voli:</strong> {{ znak.osnovne_karakteristike.Voli|join:", " }}</li>
+                <li class="list-group-item"><strong>Ne voli:</strong> {{ znak.osnovne_karakteristike.Ne_voli|join:", " }}</li>
+                <li class="list-group-item"><strong>Poznati:</strong> {{ znak.osnovne_karakteristike.Poznati|join:", " }}</li>
+            </ul>
+
+            <h6>Karakteristike</h6>
+            <p>{{ znak.karakteristike.opis }}</p>
+            <h6>Ljubav</h6>
+            <p>{{ znak.karakteristike.ljubav }}</p>
+            <h6>Karijera</h6>
+            <p>{{ znak.karakteristike.karijera }}</p>
+            <h6>Prijatelji i porodica</h6>
+            <p>{{ znak.karakteristike.prijatelji_i_porodica }}</p>
+            <h6>Zdravlje</h6>
+            <p>{{ znak.karakteristike.zdravlje }}</p>
+            <h6>Slaganje</h6>
+            <p>{{ znak.karakteristike.slaganje }}</p>
+
+        </div>
+
+        <a href="../../{{ znak.znak | lower  }}" class="btn btn-primary">Nazad</a>
+
+    </div>
 
 {% endblock %}
