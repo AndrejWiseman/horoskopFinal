@@ -1,14 +1,104 @@
-<nav class="navbar">
-    <a href="/" class="logo">Horoskop</a>
+<nav class="navbar navbar-expand-sm bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Horoskop</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/">Pocetna</a>
+        </li>
 
-    <ul class="nav-links">
-        <li><a href="/">Pocetna</a></li>
-        <li><a href="#">Znakovi</a></li>
-        <li><a href="#">Osobine</a></li>
-    </ul>
-    <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Znakovi
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="ovan/" onclick="showSpinner()">Ovan</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+
+                <li><a class="dropdown-item" href="bik/" onclick="showSpinner()">Bik</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+
+                <li><a class="dropdown-item" href="blizanci/" onclick="showSpinner()">Blizanci</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+
+                <li><a class="dropdown-item" href="rak/" onclick="showSpinner()">Rak</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+
+                <li><a class="dropdown-item" onclick="showSpinner()">Lav</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+
+                <li><a class="dropdown-item" onclick="showSpinner()">Devica</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+
+                <li><a class="dropdown-item" href="vaga/" onclick="showSpinner()">Vaga</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+
+                <li><a class="dropdown-item" href="skorpija/" onclick="showSpinner()">Škorpija</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+
+                <li><a class="dropdown-item" href="strelac/" onclick="showSpinner()">Strelac</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+
+                <li><a class="dropdown-item" href="jarac/" onclick="showSpinner()">Jarac</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+
+                <li><a class="dropdown-item" href="vodolija/" onclick="showSpinner()">Vodolija</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+
+                <li><a class="dropdown-item" href="ribe/" onclick="showSpinner()">Ribe</a></li>
+
+            </ul>
+          </li>
+
+
+      </ul>
+
     </div>
+  </div>
 </nav>
+
+
+
+
+
+{#<nav class="navbar"> #}
+{#    <a href="/" class="logo">Horoskop</a>#}
+{##}
+{#    <ul class="nav-links">#}
+{#        <li><a href="/">Pocetna</a></li>#}
+{#        <li><a href="#">Znakovi</a></li>#}
+{#        #}
+{#        #}
+{#        #}
+{#    </ul>#}
+{#    <div class="burger">#}
+{#        <div class="line1"></div>#}
+{#        <div class="line2"></div>#}
+{#        <div class="line3"></div>#}
+{#    </div>#}
+{#</nav>#}
