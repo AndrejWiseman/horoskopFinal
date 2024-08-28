@@ -6,7 +6,7 @@ import json
 import requests
 from bs4 import BeautifulSoup
 import concurrent.futures
-
+from datetime import datetime
 
 def prikazi_znak(request, znak):
     json_path = os.path.join(settings.STATICFILES_DIRS[0], 'data', 'horoskop.json')
@@ -52,7 +52,10 @@ def get_horoscope_data(znak, urls):
 
 
 def home(request):
-    context = {}
+    godina = datetime.now().year
+    context = {
+        'godina': godina,
+    }
     return render(request, 'index.html', context)
 
 
