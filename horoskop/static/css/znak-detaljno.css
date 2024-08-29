@@ -12,7 +12,11 @@
 
 .nav-link {
     padding: 5px 10px;
+    border: none;
 }
 .dodatni-link {
     text-decoration: none;
+}
+ul button.active {
+    border: none;
 }

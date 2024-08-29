@@ -13,27 +13,27 @@
 
 {% block content %}
 
-    <div class="card  mb-3 horoskop-card" style="max-width: 550px; margin: 20px auto;">
+    <div class="card  mb-3 horoskop-card w3-theme-l1" style="max-width: 550px; margin: 20px auto;">
 
         <div class="card-header kard-naslov">
             <h3>{{ znak.znak | capfirst }}</h3>
         </div>
 
-        <div class="card-body">
+        <div class="card-body w3-theme-l1">
 
             <h6>Osnovne karakteristike</h6>
 
-            <ul class="list-group">
-                <li class="list-group-item"><strong>Element:</strong> {{ znak.osnovne_karakteristike.Element }}</li>
-                <li class="list-group-item"><strong>Kvalitet:</strong> {{ znak.osnovne_karakteristike.Kvalitet }}</li>
-                <li class="list-group-item"><strong>Vladajuća planeta:</strong> {{ znak.osnovne_karakteristike.Vladajuća_planeta }}</li>
-                <li class="list-group-item"><strong>Vladajuća kuća:</strong> {{ znak.osnovne_karakteristike.Vladajuća_kuća }}</li>
-                <li class="list-group-item"><strong>Suprotni znak:</strong> {{ znak.osnovne_karakteristike.Suprotni_znak }}</li>
-                <li class="list-group-item"><strong>Vrline:</strong> {{ znak.osnovne_karakteristike.Vrline|join:", " }}</li>
-                <li class="list-group-item"><strong>Mane:</strong> {{ znak.osnovne_karakteristike.Mane|join:", " }}</li>
-                <li class="list-group-item"><strong>Voli:</strong> {{ znak.osnovne_karakteristike.Voli|join:", " }}</li>
-                <li class="list-group-item"><strong>Ne voli:</strong> {{ znak.osnovne_karakteristike.Ne_voli|join:", " }}</li>
-                <li class="list-group-item"><strong>Poznati:</strong> {{ znak.osnovne_karakteristike.Poznati|join:", " }}</li>
+            <ul class="list-group ">
+                <li class="list-group-item w3-theme-l1"><strong>Element:</strong> {{ znak.osnovne_karakteristike.Element }}</li>
+                <li class="list-group-item w3-theme-l1"><strong>Kvalitet:</strong> {{ znak.osnovne_karakteristike.Kvalitet }}</li>
+                <li class="list-group-item w3-theme-l1"><strong>Vladajuća planeta:</strong> {{ znak.osnovne_karakteristike.Vladajuća_planeta }}</li>
+                <li class="list-group-item w3-theme-l1"><strong>Vladajuća kuća:</strong> {{ znak.osnovne_karakteristike.Vladajuća_kuća }}</li>
+                <li class="list-group-item w3-theme-l1"><strong>Suprotni znak:</strong> {{ znak.osnovne_karakteristike.Suprotni_znak }}</li>
+                <li class="list-group-item w3-theme-l1"><strong>Vrline:</strong> {{ znak.osnovne_karakteristike.Vrline|join:", " }}</li>
+                <li class="list-group-item w3-theme-l1"><strong>Mane:</strong> {{ znak.osnovne_karakteristike.Mane|join:", " }}</li>
+                <li class="list-group-item w3-theme-l1"><strong>Voli:</strong> {{ znak.osnovne_karakteristike.Voli|join:", " }}</li>
+                <li class="list-group-item w3-theme-l1"><strong>Ne voli:</strong> {{ znak.osnovne_karakteristike.Ne_voli|join:", " }}</li>
+                <li class="list-group-item w3-theme-l1"><strong>Poznati:</strong> {{ znak.osnovne_karakteristike.Poznati|join:", " }}</li>
             </ul>
 
             <h6>Karakteristike</h6>
@@ -51,7 +51,7 @@
 
         </div>
 
-        <a href="../../{{ znak.znak | lower | remove_diacritics  }}" class="btn btn-primary">Nazad</a>
+        <a href="../../{{ znak.znak | lower | remove_diacritics  }}" class="btn w3-theme-d1">Nazad</a>
 
     </div>
 

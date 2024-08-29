@@ -12,7 +12,7 @@
 
 {% block content %}
 
-    <div class="card  mb-3 horoskop-card" style="max-width: 550px; margin: 20px auto;">
+    <div class="card  mb-3 horoskop-card w3-animate-zoom w3-theme-l2" style="max-width: 550px; margin: 20px auto;">
 
       <div class="card-header kard-naslov">
         <h3>{{ znak | capfirst }}</h3>
@@ -21,25 +21,25 @@
       <div class="card-body">
 
         <ul class="nav nav-tabs d-flex justify-content-around" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active btn-sm" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Danas</button>
+          <li class="nav-item w3-theme-l1" role="presentation">
+            <button class="nav-link active btn-sm w3-theme-l1" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Danas</button>
           </li>
 
           <li class="nav-item" role="presentation">
-            <button class="nav-link btn-sm" id="sutra-tab" data-bs-toggle="tab" data-bs-target="#sutra-tab-pane" type="button" role="tab" aria-controls="sutra-tab-pane" aria-selected="false">Sutra</button>
+            <button class="nav-link btn-sm w3-theme-l1" id="sutra-tab" data-bs-toggle="tab" data-bs-target="#sutra-tab-pane" type="button" role="tab" aria-controls="sutra-tab-pane" aria-selected="false">Sutra</button>
           </li>
 
           <li class="nav-item" role="presentation">
-            <button class="nav-link btn-sm" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Nedeljni</button>
+            <button class="nav-link btn-sm w3-theme-l1" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Nedeljni</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link btn-sm" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Mesečni</button>
+            <button class="nav-link btn-sm w3-theme-l1" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Mesečni</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link btn-sm" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Godišnji</button>
+            <button class="nav-link btn-sm w3-theme-l1" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Godišnji</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link btn-sm" id="znak-tab" data-bs-toggle="tab" data-bs-target="#znak-tab-pane" type="button" role="tab" aria-controls="znak-tab-pane" aria-selected="false"><a class="dodatni-link" href="{% url 'prikazi_znak' znak %}">Više o znaku</a></button>
+            <button class="nav-link btn-sm w3-theme-l1" id="znak-tab" data-bs-toggle="tab" data-bs-target="#znak-tab-pane" type="button" role="tab" aria-controls="znak-tab-pane" aria-selected="false"><a class="dodatni-link" href="{% url 'prikazi_znak' znak %}">Više o znaku</a></button>
           </li>
         </ul>
 
@@ -65,7 +65,7 @@
         </div>
       </div>
 
-    <a href="../" class="btn btn-primary">Nazad</a>
+    <a href="../" class="btn w3-theme-l1">Nazad</a>
 
     </div>
 

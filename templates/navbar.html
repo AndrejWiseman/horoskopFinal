@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-sm bg-body-tertiary">
+<nav class="navbar navbar-expand-sm bg-body-tertiary w3-theme">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">Horoskop</a>
+    <a class="navbar-brand " href="/">Horoskop</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -14,7 +14,7 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Znakovi
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu w3-theme-l1">
               <li><a class="dropdown-item" href="{% url 'horoskop' 'ovan' %}" onclick="showSpinner()">Ovan</a></li>
               <li>
                 <hr class="dropdown-divider">
@@ -76,11 +76,11 @@
           </li>
           
           
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown ">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Vise o znaku
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu w3-theme-l1">
               <li><a class="dropdown-item" href="{% url 'prikazi_znak' 'ovan' %} ">Ovan</a></li>
               <li>
                 <hr class="dropdown-divider">
